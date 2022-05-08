@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Beauty Space</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="http://fonts.cdnfonts.com/css/roboto">
+    <script type="text/javascript" src="https://livejs.com/live.js"></script>  
+    
+</head>
+<body>
+    <header class="header">
+        <nav class="nav-bar secondary-text">
+            <div class="nav-bar-wrapper">
+                <div class="nav-logo-wrapper">
+                    <i class="nav-logo"></i>
+                    <span class="nav-title">Beauty Space</span>
+                </div>
+
+                <div class="nav-menu-wrapper">
+                    <span class="nav-menu-item">Про нас</span>
+                    <span class="nav-menu-item">Новини</span>
+                    <span class="nav-menu-item">Соц мережі</span>
+                    <i class="nav-menu-icon"></i>
+                </div>
+                <div class="menu-button"></div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="page-wrapper">
+        <div class="registration-form-image">
+            <img src="img/kartinka.jpg" alt="">
+        </div>
+
+        <section class="registration-section">
+            <div class="registration-form-wrapper">
+                <div class="form-card flex-column">
+                    <div class="form-wrapper">
+                        <h2 class="form-title">Зареєструйтеся на курс вже зараз!</h2>
+
+                        <form class="registration-form flex-column" action="submit">
+                            <label class="form-label" for="name">Ім'я</label>
+                            <input type="text" class="form-input" id="name" name="name" placeholder="Введіть ім'я">
+
+                            <label class="form-label" for="phone">Телефон</label>
+                            <input type="tel" class="form-input" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="+38 (__) ___ __ __">
+
+                            <label class="form-label" for="select">В яку групу вас записати? </label>
+                            <div>
+                                <select name id="select" class="form-input-third form-input-select" >
+                                    <option value="morning">Ранкова група</option>
+                                    <option value="day">Денна група</option>
+                                    <option value="evening">Вечірня група</option>
+                                </select>
+                                <label for="" id="labelCh" class="select-label">9:00-12:00</label>
+                            </div>
+
+                            <button class="form-submit-button" type="submit" >Зареєструватися</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="label-name">
+        <div class="label-name-1">Авторський курс:</div>
+        <div class="label-name-2">"Сама собі візажист"</div>
+    </div>
+    <footer class="footer secondary-text">© 2022 Beauty Space. Всі права захищені.</footer>
+    <script src="./js/script.js"></script>
+</body>
+</html>
